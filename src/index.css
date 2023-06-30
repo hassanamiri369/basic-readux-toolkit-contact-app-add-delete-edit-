@@ -5,9 +5,85 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  display: flex;
+}
+
+
+.changeTheme{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction:column ;
+  align-items: flex-start;
+  flex: 5;
+}
+
+/* user component */
+.user-container{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-content{
+  border: 1px solid gray;
+  border-radius: 5px;
+  /* width: 70%; */
+  margin: 10px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 10px;
+  min-height: 100px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: rgb(203, 148, 243);
+  
+}
+
+.user-content:hover{
+  box-shadow: 0 0 10px rgb(158, 154, 154);
+  background-color: rgb(175, 71, 250);
+  color: white;
+}
+
+.user-content .item{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-content .buttons{
+  /* background-color: red; */
+  display: flex;
+  /* width: 50%; */
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+  
+}
+
+.buttons button{
+  width: 100px;
+  margin: 5px;
+  cursor: pointer;
+  padding: 3px 7px;
 }
